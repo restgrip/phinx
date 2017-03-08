@@ -1,0 +1,24 @@
+{
+    "name": "restgrip/phinx",
+    "description": "Restgrip extra module extending Phinx and restgrip/db configuration for database migration",
+    "homepage": "https://github.com/restgrip/phinx",
+    "authors": [
+        {
+            "name": "Sarjono Mukti Aji",
+            "email": "me@simukti.net",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "restgrip/db": "*",
+        "robmorgan/phinx": ">=0.7.0,<0.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Restgrip\\": "src/Restgrip"
+        }
+    }
+}
