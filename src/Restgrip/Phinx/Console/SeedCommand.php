@@ -12,7 +12,9 @@ class SeedCommand extends PhinxCommandAbstract
 {
     protected function configure()
     {
-        $this->setName('phinx:seed')->setDescription('Insert seed/fixture data to migrated tables.');
+        $this->setName('phinx:seed')->setDescription(
+            'Insert seed/data fixture. (No seeding if table already contains data).'
+        );
     }
     
     /**
